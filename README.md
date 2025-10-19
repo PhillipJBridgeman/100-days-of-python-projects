@@ -11,7 +11,7 @@ Welcome to the 100 Days of Python Projects repository — a chronological record
 ## Goal
 
 - Build and document 100 concrete Python projects (small to medium)  
-- Improve problem solving, testing, debugging, and documentation habits  
+- Improve problem-solving, testing, debugging, and documentation habits  
 - Produce a public portfolio suitable for interviews and demonstrations  
 - Practice reproducible environments, CI, and deployment
 
@@ -180,7 +180,7 @@ This repository is licensed under the MIT License — see LICENSE for details.
 
 - Instructor: Dr. Angela Yu — App Brewery  
 - Platform: Udemy  
-- Student: Phillip Bridgeman (Started: May 21 2025)
+- Student: Phillip Bridgeman (Started: May 21, 2025)
 
 ---
 
@@ -190,4 +190,4 @@ If you want, I can:
 - Generate a CONTRIBUTING.md or CODE_OF_CONDUCT.md
 - Add sample tests for one project
 
-Specify which and I’ll produce the files.
+Please let me know which, and I'll produce the files.
