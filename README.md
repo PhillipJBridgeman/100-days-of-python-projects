@@ -1,95 +1,193 @@
-# 100 Days of Python Projects 🚀
+# 🐍 100 Days of Python Projects
 
-Welcome! This repository chronicles my journey through [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/) by Dr. Angela Yu.  
-**Goal:** Master Python by building 100 projects in 100 days, preparing for a career transition into cloud, security, or software development.
+Welcome to the 100 Days of Python Projects repository — a chronological record of small, focused Python projects built to practice core programming, automation, web development, and data work.
 
----
+![Python](https://img.shields.io/badge/Python-3.11+-blue) ![Challenge](https://img.shields.io/badge/Challenge-100DaysOfCode-orange) ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
-## 🎯 Objectives
-
-- Build **100 real-world Python projects**: automation, web development, data science, machine learning, and more.
-- Strengthen problem-solving skills through daily coding.
-- Create a **public portfolio** to showcase Python expertise to employers.
-- Complement my certification path (Microsoft/Azure, AWS, CompTIA) with strong coding fundamentals.
+> This repo follows the Udemy course "100 Days of Code: The Complete Python Pro Bootcamp" as a learning scaffold and personal portfolio.
 
 ---
 
-## 📚 Course Highlights
+## Goal
 
-- **Duration:** ~52 hours of video, 23 coding exercises, 230 articles
-- **Instructor:** Dr. Angela Yu (London App Brewery)
-- **Rating:** ⭐ 4.7/5 (390k+ ratings, 1.6M+ students)
-- **Key Tools & Topics:**
-    - Python 3, PyCharm, Jupyter, Google Colab
-    - Flask, REST APIs, SQL/SQLite/PostgreSQL
-    - Pandas, NumPy, Matplotlib, Seaborn, Plotly
-    - Web scraping (Beautiful Soup, Selenium)
-    - Automation & scripting
-    - Game development (Snake, Pong, Blackjack)
-    - Deployment (Heroku, GitHub Pages, Gunicorn)
+- Build and document 100 concrete Python projects (small to medium)  
+- Improve problem solving, testing, debugging, and documentation habits  
+- Produce a public portfolio suitable for interviews and demonstrations  
+- Practice reproducible environments, CI, and deployment
 
 ---
 
-## 📂 Repository Structure
+## Key topics
 
-```bash
-.
-├── Day01/        # Beginner syntax and first project
-├── Day02/        # Basic data types and exercises
-├── Day03/        # Control flow & project
-├── ...           # Days 4-99: Progressive projects
-├── Day100/       # Final capstone project
-└── README.md     # This file
+Core Python, OOP, file I/O, testing, web (Flask), APIs, automation (requests, Selenium), web scraping (BeautifulSoup), data (Pandas, NumPy, Matplotlib), GUIs (Tkinter, Turtle), databases (SQLite/SQLAlchemy), deployment (Render/Azure/GitHub Pages).
+
+---
+
+## Repo layout
+
+```
+100-days-of-python-projects/
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+├─ requirements.txt                 # shared/dev dependencies
+├─ .github/workflows/               # CI (lint, tests)
+├─ resources/
+│  ├─ images/
+│  └─ references.md
+├─ showcase/                        # polished projects
+│  ├─ blackjack-plus/
+│  └─ flask-blog-v2/
+└─ days/
+    ├─ day001-band-name-generator/
+    ├─ day002-tip-calculator/
+    ├─ ...
+    └─ day100-final-capstone/
 ```
 
-Each folder contains:
-- `main.py` – Core project code for the day
-- `notes.md` – Reflections, takeaways, improvements
-- `resources/` – Supporting files (images, datasets, etc.)
+Naming rule for day folders:
+```
+dayNNN-short-slug   # three-digit day number keeps chronological order
+```
+
+Each day folder should include:
+- main.py or app.py — entrypoint
+- README.md — project goal, usage, concepts, stretch goals
+- requirements.txt (optional) — project-specific deps
+- tests/ (optional) — unit/integration tests
 
 ---
 
-## 🛠️ Sample Projects
+## Progress summary
 
-- 🎮 Games: Snake, Pong, Blackjack
-- 🤖 Automation: Birthday emailer, LinkedIn auto-apply bot
-- 🌐 Web: Blog sites & APIs with Flask
-- 📊 Data: Analysis with Pandas, NumPy, Matplotlib
-- 📱 GUIs: Desktop apps with Tkinter
-- 📈 Data science: Google Trends, Lego datasets, etc.
+- ✅ Days 001–015 — foundational exercises and small scripts (local)
+- 🚀 Days 016+ — tracked projects in this repo (OOP apps, GUIs, Flask, APIs, DS)
+- 🎯 Goal: finish Day 100 final capstone combining multiple skills
 
 ---
 
-## 🚦 Progress Tracker
+## Setup
 
-| Day | Project                   | Status | Notes                              |
-|-----|---------------------------|--------|------------------------------------|
-| 1   | Band Name Generator       | ✅     | Learned basic input/output         |
-| 2   | Tip Calculator            | ✅     | Practiced f-strings & math ops     |
-| 3   | Treasure Island Game      | ✅     | Control flow with if/else          |
-| ... | ...                       | ...    | ...                                |
-| 100 | Capstone Project          | ⏳     | Coming soon!                       |
+1. Clone
+```bash
+git clone https://github.com/PhillipJBridgeman/100-days-of-python-projects.git
+cd 100-days-of-python-projects
+```
+2. Create & activate virtual environment
+Windows:
+```powershell
+python -m venv .venv
+.venv\Scripts\activate
+```
+macOS / Linux:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+3. Install shared dependencies
+```bash
+pip install -r requirements.txt
+```
+4. Run a project (example)
+```bash
+python days/day016-quiz-game/main.py
+```
+To install a project's dependencies:
+```bash
+pip install -r days/day036-stock-alert/requirements.txt
+```
 
 ---
 
-## 🌟 Career Change Context
+## Development conventions
 
-This repo is part of my plan to:
-- Transition from customer support into cloud/security/IT development roles.
-- Demonstrate consistency, technical growth, and applied problem-solving.
-- Showcase real-world coding projects alongside certifications (MS-900, AZ-900, AZ-104, AWS Cloud Practitioner, Security+).
+- Branch naming:
+  - feat/day059-add-blog, fix/day030-handle-keyerror, docs/day012-update-readme
+- Commit messages: conventional commits-ish (type(scope): short description)
+- Tests: prefer small unit tests under each project's tests/ folder
+- Linting & formatting: use black, flake8 (configured in .github/workflows)
+
+Example feature branch:
+```bash
+git checkout -b feat/day059-blog-v2
+```
 
 ---
 
-## 📬 Connect
+## Example day template
 
-- **GitHub:** [PhillipJBridgeman](https://github.com/PhillipJBridgeman)
-- **LinkedIn:** [Phillip Bridgeman](https://www.linkedin.com/in/phillip-bridgeman/)
+days/day016-quiz-game/
+```
+├─ main.py
+├─ README.md
+├─ requirements.txt   # optional
+└─ tests/
+```
+
+README template (in the day's folder):
+```markdown
+# Day 16 — Quiz Game
+**Goal:** Build a text-based quiz using OOP.
+
+## How to run
+python main.py
+
+## Concepts practiced
+- Classes & methods
+- Input validation
+
+## Stretch ideas
+- Difficulty levels
+- Fetch questions from Open Trivia DB API
+- Create a GUI version with Tkinter
+```
 
 ---
 
-## 📝 License
+## Testing & CI
 
-This repository documents my personal learning journey.  
-Course materials © London App Brewery. Projects and notes are my own work.
+- Each project may include tests in tests/ using pytest.
+- CI workflows run on push/PR: install deps, run linters, run tests.
+- Add new workflow entries if a project has special build steps.
 
+---
+
+## Contribution
+
+- Open issues for bugs, project suggestions, or improvements.
+- Fork → branch → PR. Small, focused PRs preferred.
+- Include README updates and tests where applicable.
+- Respect code style (black) and add type hints when practical.
+
+---
+
+## Future enhancements
+
+- Convert select console apps to web UIs (Flask / FastAPI)
+- Add deployment examples (Render, Azure, GitHub Pages)
+- Interactive progress badges & leaderboard
+- More unit/integration tests per project
+
+---
+
+## License
+
+This repository is licensed under the MIT License — see LICENSE for details.
+
+---
+
+## Acknowledgements
+
+- Instructor: Dr. Angela Yu — App Brewery  
+- Platform: Udemy  
+- Student: Phillip Bridgeman (Started: May 21 2025)
+
+---
+
+If you want, I can:
+- Clean up a specific day folder README
+- Add a GitHub Actions workflow template
+- Generate a CONTRIBUTING.md or CODE_OF_CONDUCT.md
+- Add sample tests for one project
+
+Specify which and I’ll produce the files.
