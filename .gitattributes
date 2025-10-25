@@ -1,0 +1,12 @@
+# Normalize text
+* text=auto
+
+# Always use LF in source files
+*.py  text eol=lf
+*.md  text eol=lf
+*.sh  text eol=lf
+
+# Keep these as binary
+*.png binary
+*.jpg binary
+*.gif binary
